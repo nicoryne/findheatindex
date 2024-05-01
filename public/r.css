@@ -68,9 +68,10 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 100vh;
+    margin-top: 15em;
     animation: transitionIn 0.75s;
 }
 
@@ -106,23 +107,25 @@ html, body {
     font-size: 32px;
     color: white;
     background-color: var(--input-color);
-    border: 0px solid goldenrod;
+    border: 2px solid goldenrod;
     border-radius: 25px;
     padding: 15px;
 }
 
 .span-mod-1 {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bold;
     margin-right: 10px;
     margin-bottom: 16px;
     text-align: center;
 }
 
-#span-result {
-    display: inline-block;
-    font-size: 32px;
+.span-mod-2 {
+    font-size: 64px;
     font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer {
