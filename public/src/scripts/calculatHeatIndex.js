@@ -12,8 +12,12 @@ document.addEventListener('DOMContentLoaded', event => {
         } else {
             resultSpan.innerHTML = "Not enough data!";
         }
+        
+        resultSpan.classList.remove('typewriter');
+        resultSpan.offsetWidth;
+        resultSpan.classList.add('typewriter');
     }
-})
+});
 
 async function retrieveWeatherData(date) {
     const url = `https://archive-api.open-meteo.com/v1/archive?latitude=10.3167&longitude=123.8907&start_date=${date}&end_date=${date}&hourly=temperature_2m,relative_humidity_2m&timezone=Asia%2FSingapore`;
