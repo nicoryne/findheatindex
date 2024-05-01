@@ -68,7 +68,7 @@ html, body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     animation: transitionIn 0.75s;
@@ -92,7 +92,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin-bottom: 7em;
 }
 
 .input-date {
@@ -115,6 +116,7 @@ html, body {
     font-weight: bold;
     margin-right: 10px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 #span-result {
