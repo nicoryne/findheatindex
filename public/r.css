@@ -101,6 +101,11 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
+}
+
+.result {
+    margin-top: 1em;
 }
 
 .input-mod-1 {
@@ -126,6 +131,10 @@ html, body {
     margin-right: 10px;
     margin-bottom: 16px;
     text-align: center;
+}
+
+#span-result {
+    display: inline-block;
 }
 
 .footer {
