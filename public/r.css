@@ -156,3 +156,25 @@ html, body {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin-top: 7em;
+    }
+    
+    .input-container {
+        margin-bottom: 3em;
+    }
+
+    .input-mod-1 {
+        font-size: 24px;
+    }
+
+    .span-mod-1 {
+        font-size: 24px;
+    }
+
+    .span-mod-2 {
+        font-size: 48px;
+    }
+}

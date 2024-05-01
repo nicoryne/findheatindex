@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', event => {
         if (weatherData && weatherData.temperature !== null && weatherData.humidity !== null && weatherData.temperature !== undefined && weatherData.humidity !== undefined) {
             resultSpan.innerHTML = calculateHeatIndex(weatherData.temperature, weatherData.humidity) + "°C";
         } else {
-            resultSpan.innerHTML = "Not enough data!";
+            resultSpan.innerHTML = "No data!";
         }
         
         resultSpan.classList.remove('typewriter');
