@@ -24,7 +24,7 @@
     0% {
         width: 0;
     }
-    96% {
+    100% {
         width: 100%;
     }
 }
@@ -44,16 +44,16 @@
     border-right: .15em solid orange;
     white-space: nowrap; 
     margin: 0 auto;
-    letter-spacing: .15em;
     animation: 
-      typing 0.7s steps(56, end),
-      blink-caret .75s infinite;
+      typing 0.4s steps(56, end),
+      blink-caret .65s step-end infinite;
 }
 
 :root {
     --bg-color: #333333;
     --footer-color: #26272b;
     --input-color: #0505052a;
+    --disclaimer-color: #ccc6c6;
 }
 
 html, body {
@@ -104,6 +104,26 @@ html, body {
     margin-top: 1em;
 }
 
+.input-date input[type="date"] {
+    font-size: 24px;
+    color: white;
+    background-color: var(--input-color);
+    border: 0px solid goldenrod;
+    border-radius: 25px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.input-date input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.input-date input[type="date"]::-webkit-inner-spin-button,
+.input-date input[type="date"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .result {
     margin-top: 1em;
 }
@@ -112,7 +132,7 @@ html, body {
     font-size: 32px;
     color: white;
     background-color: var(--input-color);
-    border: 2px solid goldenrod;
+    border: 0px solid goldenrod;
     border-radius: 25px;
     padding: 15px;
 }
@@ -133,8 +153,21 @@ html, body {
     text-align: center;
 }
 
+.span-mod-3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
 #span-result {
     display: inline-block;
+}
+
+.disclaimer {
+    text-align: center;
+    padding: 0 1em;
+    margin-top: 2em;
+    color: var(--disclaimer-color);
 }
 
 .footer {
@@ -146,6 +179,10 @@ html, body {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.span-highlighted {
+    color: goldenrod;
 }
 
 .footer a {
